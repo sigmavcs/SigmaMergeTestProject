@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "c901cfea-d121-472f-818f-f8a4c46a2651"
+          "c901cfea-d121-472f-818f-f8a4c46a2651",
+          "08abd920-db0d-4b89-b00e-967c11d73b64"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -22,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n\n    const number = 15;\n    \n    callback(null, {\"message\": \"Successfully executed\" + number});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -30,43 +31,35 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": [
-          {
-            "resourceName": "apigusEast1MyAPItestany",
-            "config": {}
-          }
-        ]
+        "triggers": []
+      },
+      "08abd920-db0d-4b89-b00e-967c11d73b64": {
+        "id": "08abd920-db0d-4b89-b00e-967c11d73b64",
+        "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
+        "name": "second.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/second.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed!\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
-    "deletedFiles": [
-      "SigmaMergeTestProject/second.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
       "c901cfea-d121-472f-818f-f8a4c46a2651"
     ],
     "currentFileId": "c901cfea-d121-472f-818f-f8a4c46a2651",
-    "resources": {
-      "apigusEast1MyAPItestany": {
-        "name": "apigusEast1MyAPItestany",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 0,
-          "apiName": "MyAPI",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "test",
-          "resourcePath": "/test",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "Prod",
-          "mode": 0
-        }
-      }
-    },
+    "resources": {},
     "customTemplate": {
       "dialect": null,
       "definitions": {}
@@ -92,7 +85,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561960590800
+    "lastSave": 1562010915610
   },
   "VCS_STATE": {
     "provider": "GitHub",
