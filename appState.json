@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "c901cfea-d121-472f-818f-f8a4c46a2651"
+          "c901cfea-d121-472f-818f-f8a4c46a2651",
+          "08abd920-db0d-4b89-b00e-967c11d73b64"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -31,14 +32,34 @@
           "layers": []
         },
         "triggers": []
+      },
+      "08abd920-db0d-4b89-b00e-967c11d73b64": {
+        "id": "08abd920-db0d-4b89-b00e-967c11d73b64",
+        "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
+        "name": "second.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/second.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
     "deletedFiles": [],
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
-      "c901cfea-d121-472f-818f-f8a4c46a2651"
+      "c901cfea-d121-472f-818f-f8a4c46a2651",
+      "08abd920-db0d-4b89-b00e-967c11d73b64"
     ],
-    "currentFileId": "c901cfea-d121-472f-818f-f8a4c46a2651",
+    "currentFileId": "08abd920-db0d-4b89-b00e-967c11d73b64",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -65,7 +86,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561957346156
+    "lastSave": 1561957835567
   },
   "VCS_STATE": {
     "provider": "GitHub",
