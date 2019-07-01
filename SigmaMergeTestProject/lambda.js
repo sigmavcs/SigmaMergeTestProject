@@ -1,6 +1,6 @@
 exports.handler = function(event, context, callback) {
 
-    const number = 15;
+    const i = 15;
     
-    callback(null, {"message": "Successfully executed" + number});
+    callback(null, {"message": "Successfully executed" + i});
 }
