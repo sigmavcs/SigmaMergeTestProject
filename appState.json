@@ -23,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n\n    const i = 15;\n    \n    callback(null, {\"message\": \"Successfully executed\" + i});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -56,10 +56,9 @@
     "deletedFiles": [],
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
-      "c901cfea-d121-472f-818f-f8a4c46a2651",
-      "08abd920-db0d-4b89-b00e-967c11d73b64"
+      "c901cfea-d121-472f-818f-f8a4c46a2651"
     ],
-    "currentFileId": "08abd920-db0d-4b89-b00e-967c11d73b64",
+    "currentFileId": "c901cfea-d121-472f-818f-f8a4c46a2651",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -86,7 +85,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561957835567
+    "lastSave": 1561957987215
   },
   "VCS_STATE": {
     "provider": "GitHub",
