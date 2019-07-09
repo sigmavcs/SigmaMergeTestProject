@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "c901cfea-d121-472f-818f-f8a4c46a2651"
+          "c901cfea-d121-472f-818f-f8a4c46a2651",
+          "3acf8e13-04ba-4619-9307-bf7b40bf40a1"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -22,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed!\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Function successfully executed!\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -36,6 +37,17 @@
             "config": {}
           }
         ]
+      },
+      "3acf8e13-04ba-4619-9307-bf7b40bf40a1": {
+        "id": "3acf8e13-04ba-4619-9307-bf7b40bf40a1",
+        "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
+        "name": "newjs.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/newjs.js",
+        "code": "console.log(\"hello!\");"
       }
     },
     "deletedFiles": [
@@ -92,7 +104,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562573907597
+    "lastSave": 1562674165245
   },
   "VCS_STATE": {
     "provider": "GitHub",
