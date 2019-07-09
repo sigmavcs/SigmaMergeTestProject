@@ -9,7 +9,8 @@
         "isDirectory": true,
         "children": [
           "c901cfea-d121-472f-818f-f8a4c46a2651",
-          "3acf8e13-04ba-4619-9307-bf7b40bf40a1"
+          "3acf8e13-04ba-4619-9307-bf7b40bf40a1",
+          "f9bb1525-6514-4b3c-bc66-c7f49c4bac8c"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -23,7 +24,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Function successfully executed!\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Function successfully executed!!!\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -47,17 +48,52 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/newjs.js",
-        "code": "console.log(\"hello!\");"
+        "code": "console.log(\"hello, how are you?\");"
+      },
+      "f9bb1525-6514-4b3c-bc66-c7f49c4bac8c": {
+        "id": "f9bb1525-6514-4b3c-bc66-c7f49c4bac8c",
+        "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
+        "name": "dir",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "876f2bc1-185b-4ec1-b289-6bc91452c06b",
+          "21cd3f87-510b-4659-847d-7b4adb03f8cd"
+        ],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/dir"
+      },
+      "876f2bc1-185b-4ec1-b289-6bc91452c06b": {
+        "id": "876f2bc1-185b-4ec1-b289-6bc91452c06b",
+        "parent": "f9bb1525-6514-4b3c-bc66-c7f49c4bac8c",
+        "name": "file.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/dir/file.py",
+        "code": "print \"Hello!\""
+      },
+      "21cd3f87-510b-4659-847d-7b4adb03f8cd": {
+        "id": "21cd3f87-510b-4659-847d-7b4adb03f8cd",
+        "parent": "f9bb1525-6514-4b3c-bc66-c7f49c4bac8c",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/dir/__init__.py",
+        "code": ""
       }
     },
-    "deletedFiles": [
-      "SigmaMergeTestProject/second.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
-      "c901cfea-d121-472f-818f-f8a4c46a2651"
+      "c901cfea-d121-472f-818f-f8a4c46a2651",
+      "3acf8e13-04ba-4619-9307-bf7b40bf40a1",
+      "876f2bc1-185b-4ec1-b289-6bc91452c06b"
     ],
-    "currentFileId": "c901cfea-d121-472f-818f-f8a4c46a2651",
+    "currentFileId": "876f2bc1-185b-4ec1-b289-6bc91452c06b",
     "resources": {
       "apigusEast1MyAPItestget": {
         "name": "apigusEast1MyAPItestget",
@@ -104,7 +140,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562674165245
+    "lastSave": 1562674323884
   },
   "VCS_STATE": {
     "provider": "GitHub",
