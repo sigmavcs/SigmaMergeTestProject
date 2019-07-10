@@ -10,7 +10,8 @@
         "children": [
           "c901cfea-d121-472f-818f-f8a4c46a2651",
           "3acf8e13-04ba-4619-9307-bf7b40bf40a1",
-          "3dc9c340-8139-4b96-bf71-eb632db8bb11"
+          "3dc9c340-8139-4b96-bf71-eb632db8bb11",
+          "04c13514-a004-471c-bf9c-644036bcb8a6"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -72,7 +73,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/anotherdir/another.py",
-        "code": "from abc import xyz"
+        "code": "import numpy as np\n\na = np.arange(15).reshape(3, 5)\nprint a\n\ndef joke():\n    return (u'Wenn ist das Nunst\\u00fcck git und Slotermeyer? Ja! ... '\n            u'Beiherhund das Oder die Flipperwaldt gersput.')"
       },
       "ca2f2b10-720b-4e68-83a4-01d1468f061b": {
         "id": "ca2f2b10-720b-4e68-83a4-01d1468f061b",
@@ -84,6 +85,29 @@
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/anotherdir/__init__.py",
         "code": ""
+      },
+      "04c13514-a004-471c-bf9c-644036bcb8a6": {
+        "id": "04c13514-a004-471c-bf9c-644036bcb8a6",
+        "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
+        "name": "stgdir",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9f0781c5-a12c-49e1-b261-11355a1d1580"
+        ],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/stgdir"
+      },
+      "9f0781c5-a12c-49e1-b261-11355a1d1580": {
+        "id": "9f0781c5-a12c-49e1-b261-11355a1d1580",
+        "parent": "04c13514-a004-471c-bf9c-644036bcb8a6",
+        "name": "my.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SigmaMergeTestProject/stgdir/my.js",
+        "code": "console.log(\"this is a test file!\");"
       }
     },
     "deletedFiles": [
@@ -92,9 +116,10 @@
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
       "c901cfea-d121-472f-818f-f8a4c46a2651",
-      "3f3f8d13-1f18-4ec4-861d-8ff4fb4459ff"
+      "3f3f8d13-1f18-4ec4-861d-8ff4fb4459ff",
+      "9f0781c5-a12c-49e1-b261-11355a1d1580"
     ],
-    "currentFileId": "3f3f8d13-1f18-4ec4-861d-8ff4fb4459ff",
+    "currentFileId": "9f0781c5-a12c-49e1-b261-11355a1d1580",
     "resources": {
       "apigusEast1MyAPItestget": {
         "name": "apigusEast1MyAPItestget",
@@ -141,7 +166,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562674423760
+    "lastSave": 1562737333220
   },
   "VCS_STATE": {
     "provider": "GitHub",
