@@ -72,7 +72,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SigmaMergeTestProject/py/my.py",
-        "code": "a = [1, 2, 3, 4, 5]\ndel a[4]\nprint(a)\n"
+        "code": "a = [1, 2, 3, 4, 5]\ndel a[5]\nprint(a)\n"
       },
       "8c1a4c5d-6f21-4f68-8828-697d70fcd6f3": {
         "id": "8c1a4c5d-6f21-4f68-8828-697d70fcd6f3",
@@ -139,7 +139,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562740052282
+    "lastSave": 1562740901924
   },
   "VCS_STATE": {
     "provider": "GitHub",
