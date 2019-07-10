@@ -10,7 +10,7 @@
         "children": [
           "c901cfea-d121-472f-818f-f8a4c46a2651",
           "3acf8e13-04ba-4619-9307-bf7b40bf40a1",
-          "69f0e4d1-ecf8-403c-a9a9-3103b98d3385"
+          "a8cd5469-f7ef-434e-9459-ab31f4980743"
         ],
         "isRemovable": false,
         "filePath": "SigmaMergeTestProject"
@@ -50,49 +50,53 @@
         "filePath": "SigmaMergeTestProject/newjs.js",
         "code": "console.log(\"hello!\");"
       },
-      "69f0e4d1-ecf8-403c-a9a9-3103b98d3385": {
-        "id": "69f0e4d1-ecf8-403c-a9a9-3103b98d3385",
+      "a8cd5469-f7ef-434e-9459-ab31f4980743": {
+        "id": "a8cd5469-f7ef-434e-9459-ab31f4980743",
         "parent": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
-        "name": "py",
+        "name": "devpy",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "6835d6fb-e068-43db-8842-3afdb7d17d16",
-          "8c1a4c5d-6f21-4f68-8828-697d70fcd6f3"
+          "a1720cfa-cd75-42d5-bbc5-2b2598b36752",
+          "d5b420d7-b95f-4acd-9bca-f25cde105f80"
         ],
         "isRemovable": true,
-        "filePath": "SigmaMergeTestProject/py"
+        "filePath": "SigmaMergeTestProject/devpy"
       },
-      "6835d6fb-e068-43db-8842-3afdb7d17d16": {
-        "id": "6835d6fb-e068-43db-8842-3afdb7d17d16",
-        "parent": "69f0e4d1-ecf8-403c-a9a9-3103b98d3385",
+      "a1720cfa-cd75-42d5-bbc5-2b2598b36752": {
+        "id": "a1720cfa-cd75-42d5-bbc5-2b2598b36752",
+        "parent": "a8cd5469-f7ef-434e-9459-ab31f4980743",
         "name": "my.py",
         "type": "PYTHON_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "SigmaMergeTestProject/py/my.py",
-        "code": "a = [1, 2, 3, 4, 5]\ndel a[5]\nprint(a)\n"
+        "filePath": "SigmaMergeTestProject/devpy/my.py",
+        "code": "print \"Hello Sigma!\""
       },
-      "8c1a4c5d-6f21-4f68-8828-697d70fcd6f3": {
-        "id": "8c1a4c5d-6f21-4f68-8828-697d70fcd6f3",
-        "parent": "69f0e4d1-ecf8-403c-a9a9-3103b98d3385",
+      "d5b420d7-b95f-4acd-9bca-f25cde105f80": {
+        "id": "d5b420d7-b95f-4acd-9bca-f25cde105f80",
+        "parent": "a8cd5469-f7ef-434e-9459-ab31f4980743",
         "name": "__init__.py",
         "type": "PYTHON_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "SigmaMergeTestProject/py/__init__.py",
+        "filePath": "SigmaMergeTestProject/devpy/__init__.py",
         "code": ""
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "SigmaMergeTestProject/py",
+      "SigmaMergeTestProject/py/my.py",
+      "SigmaMergeTestProject/py/__init__.py"
+    ],
     "rootNode": "a2a27171-16ce-4ec0-8509-c4b7d18e954b",
     "openFiles": [
       "c901cfea-d121-472f-818f-f8a4c46a2651",
-      "6835d6fb-e068-43db-8842-3afdb7d17d16"
+      "a1720cfa-cd75-42d5-bbc5-2b2598b36752"
     ],
-    "currentFileId": "6835d6fb-e068-43db-8842-3afdb7d17d16",
+    "currentFileId": "a1720cfa-cd75-42d5-bbc5-2b2598b36752",
     "resources": {
       "apigusEast1MyAPItestget": {
         "name": "apigusEast1MyAPItestget",
@@ -139,7 +143,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562740901924
+    "lastSave": 1562740983042
   },
   "VCS_STATE": {
     "provider": "GitHub",
